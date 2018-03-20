@@ -14,7 +14,9 @@ export default class Login extends Component{
     }
     render() {
         return(
-            <KeyboardAvoidingView style={styles.container}>
+            <KeyboardAvoidingView          
+            behavior='padding'
+            style={styles.container}>
             <View style={styles.logoContainer}>
             <Image
             style={styles.logo}

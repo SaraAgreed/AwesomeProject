@@ -31,5 +31,3 @@ const Navigation = StackNavigator({
 });
 
 export default Navigation; 
-
-

@@ -6,7 +6,8 @@ import {
     TextInput,
     TouchableOpacity,
     Alert,
-    Image
+    Image,
+    KeyboardAvoidingView
 } from 'react-native'
 export default class Register extends Component{
     static navigationOptions = {
@@ -58,7 +59,9 @@ export default class Register extends Component{
     }
     render() {
         return(
-            <View style={styles.container}>
+            <KeyboardAvoidingView
+            behavior='padding'
+             style={styles.container}>
             <View style={styles.logoContainer}>
             <Image
             style={styles.logo}
@@ -90,7 +93,7 @@ export default class Register extends Component{
                 Already a member ? Sign In Now
                 </Text>
                 </TouchableOpacity>    
-            </View>
+            </KeyboardAvoidingView>
         );
     }
 } 
