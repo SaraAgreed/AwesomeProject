@@ -26,7 +26,7 @@ export default class Login extends Component{
                 An app made for github using React Native 
                 </Text>
             </View>
-            <View style={styles.formContainer}>
+            <View>
             <LoginForm />
             </View>
             </KeyboardAvoidingView>
